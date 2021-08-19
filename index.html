@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+	<!--  -->
+	<h1>Hi Cantikkk</h1>
+	<h1>Mau ga jadi pacarku?</h1>
+	
+	<!-- gambar -->
+	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F2398700%2Fscreenshots%2F6225309%2Fpanda-for-dribbble4.gif&f=1&nofb=1" style="width:250px; height:250px;">
+	<br></br>
+	
+	<!-- button -->
+	<button id='btn_mau' onclick='alert("I &#128151 U")' style="margin-right:5px;">Mau</button>
+	<button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+
+</body>
+<script>
+	function gamau(id){
+		var mau = document.getElementById('btn_mau');
+		var i = Math.floor(Math.random()*300)+3;
+		var j = Math.floor(Math.random()*100)+mau.offsetTop;
+		id.style.left = i + 'px';
+		id.style.top = j + 'px';
+	}
+</script>
+</html>
