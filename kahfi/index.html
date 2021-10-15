@@ -1,49 +1,38 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
 <html>
+<!-- the title will appear on the page-->
 <head>
-	<title>Page Title</title>
-	<style>
-		.imgCenter{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 600px;
-			height: 900px;
-		}
-		.form1{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	</style>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="login-page.css">
-	<script defer src="login-page.js"></script>
+<title>Employee Interests Survey</title>
 </head>
 <body>
-  <main id="main-holder">
-    <h1 id="login-header">Login</h1>
-    
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-    </div>
-    
-    <form id="login-form">
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-      <input type="submit" value="Login" id="login-form-submit">
-    </form>
-  
-  </main>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<h1>Employee Interests Survey form</h1>
+Nama :
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+Nomer telpon :
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+Alamat :
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+Jenis kelamin ?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Pria
+<input type="radio" name="exe" value=2>Wanita
+</p>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
+</div>
+</form>
 </body>
-<script>
-	function gamau(id){
-		var mau = document.getElementById('btn_mau');
-		var i = Math.floor(Math.random()*300)+3;
-		var j = Math.floor(Math.random()*100)+mau.offsetTop;
-		id.style.left = i + 'px';
-		id.style.top = j + 'px';
-	}
-</script>
 </html>
