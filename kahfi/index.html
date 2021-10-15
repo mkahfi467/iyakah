@@ -10,31 +10,32 @@
 			width: 600px;
 			height: 900px;
 		}
+		.form1{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="login-page.css">
+	<script defer src="login-page.js"></script>
 </head>
 <body>
-	<p>Hello world!!</p>
-	<!--
-	<img class="imgCenter" src="Foto/BULTANG.jpg" style="">
-	
-	<a href="kahfi/index.html">link text</a>
-	-->
-	<!--  -->
-	<!-- 
-	<h1 style="font-family:arial">Hi Cantikkk</h1>
-	<h1 style="font-family:arial">Mau ga jadi pacarku?</h1>
-	-->
-	<!-- gambar -->
-	<!--
-	<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F2398700%2Fscreenshots%2F6225309%2Fpanda-for-dribbble4.gif&f=1&nofb=1" style="width:250px; height:250px;">
-	<br></br>
-	-->
-	
-	<!-- button -->
-	<!--
-	<button id='btn_mau' onclick='alert("I &#128151 U")' style="margin-right:5px;">Mau</button>
-	<button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
-	-->
+  <main id="main-holder">
+    <h1 id="login-header">Login</h1>
+    
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+  
+  </main>
 </body>
 <script>
 	function gamau(id){
